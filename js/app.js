@@ -48,7 +48,7 @@ const DataLoader = {
 
 // ---- CART ----
 const Cart = {
-  _key: 'beauty_cart',
+  _key: 'krasa_cart',
   items: [],
 
   load() {
