@@ -346,6 +346,7 @@ const Checkout = {
     const payload = {
       orderNum,
       type: 'order',
+      shop: CONFIG.shop.name,
       noCall: this.callPref === 'nocall',
       payment: {
         method: this.payment,
