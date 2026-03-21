@@ -1,9 +1,11 @@
 /*
-  Content-Type: text/html; charset=utf-8
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://n8n.automaticly.org https://api.novaposhta.ua https://www.google-analytics.com; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://static.cloudflareinsights.com https://translate.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://n8n.automaticly.org https://api.novaposhta.ua https://www.google-analytics.com https://translate.googleapis.com; frame-ancestors 'none'
+
+/*.html
+  Content-Type: text/html; charset=utf-8
 
 /data/*.json
   Content-Type: application/json; charset=utf-8
