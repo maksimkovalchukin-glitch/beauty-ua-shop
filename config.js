@@ -9,7 +9,7 @@ const CONFIG = {
     phone: '+380 50 000 00 00',
     telegram: '@krasa_store_ua',
     workHours: 'Пн-Пт 9:00–18:00',
-    domain: 'https://krasaua.store',
+    domain: 'https://krasainua.store',
   },
   dataPath: './data',
   itemsPerPage: 24,
