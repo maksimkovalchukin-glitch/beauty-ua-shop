@@ -77,21 +77,21 @@ const ProductPage = {
   },
 
   _render(p, catId) {
-    document.title = `${p.name} — Техно.ua`;
+    document.title = `${p.name} — ${CONFIG.shop.name}`;
     // Dynamic SEO meta tags
     const _desc = descText(p.description || `Купити ${p.name} з доставкою по Україні`).slice(0, 160);
     const _img = p.pictures && p.pictures[0] ? p.pictures[0] : '';
-    const _url = `https://technoua.store/product.html?id=${p.id}&cat=${catId}`;
+    const _url = `${CONFIG.shop.domain}/product.html?id=${p.id}&cat=${catId}`;
     const _sm = (id, attr, val) => { const el = document.getElementById(id); if (el && val) el.setAttribute(attr, val); };
     _sm('metaDesc', 'content', _desc);
     _sm('canonical', 'href', _url);
     _sm('ogUrl', 'content', _url);
-    _sm('ogTitle', 'content', `${p.name} — Техно.ua`);
+    _sm('ogTitle', 'content', `${p.name} — ${CONFIG.shop.name}`);
     _sm('ogDesc', 'content', _desc);
     _sm('ogImage', 'content', _img);
     const _ld = document.createElement('script');
     _ld.type = 'application/ld+json';
-    _ld.textContent = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Product', name: p.name, description: _desc, image: _img ? [_img] : undefined, sku: String(p.id), brand: p.vendor ? { '@type': 'Brand', name: p.vendor } : undefined, offers: { '@type': 'Offer', priceCurrency: 'UAH', price: p.price || 0, availability: p.available ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock', seller: { '@type': 'Organization', name: 'Техно.ua' } } });
+    _ld.textContent = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Product', name: p.name, description: _desc, image: _img ? [_img] : undefined, sku: String(p.id), brand: p.vendor ? { '@type': 'Brand', name: p.vendor } : undefined, offers: { '@type': 'Offer', priceCurrency: 'UAH', price: p.price || 0, availability: p.available ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock', seller: { '@type': 'Organization', name: CONFIG.shop.name } } });
     document.head.appendChild(_ld);
 
     const availBadge = p.available
@@ -286,7 +286,7 @@ async function autoTranslateProduct(product) {
     let i = 0;
     if (h1 && results[i]) {
       h1.textContent = results[i];
-      document.title = `${results[i]} — Техно.ua`;
+      document.title = `${results[i]} — ${CONFIG.shop.name}`;
     }
     i++;
 

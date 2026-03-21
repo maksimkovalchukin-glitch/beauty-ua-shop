@@ -53,10 +53,10 @@ const Checkout = {
 
   _checkPrefilledBranch() {
     // If branch was passed via delivery page
-    const saved = localStorage.getItem('budivlya_delivery_branch');
+    const saved = localStorage.getItem('beauty_delivery_branch');
     if (saved && !this.selectedBranch) {
       this._setSelectedBranch({ label: saved });
-      localStorage.removeItem('budivlya_delivery_branch');
+      localStorage.removeItem('beauty_delivery_branch');
     }
   },
 

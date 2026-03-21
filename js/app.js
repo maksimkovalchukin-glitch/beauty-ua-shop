@@ -419,8 +419,8 @@ function injectMobileMenu() {
     <div class="mobile-menu" id="mobileMenu">
       <div class="mobile-menu__head">
         <a href="index.html" class="logo">
-          <div class="logo__mark">Т</div>
-          <div><span class="logo__text">Техно.ua</span></div>
+          <div class="logo__mark">К</div>
+          <div><span class="logo__text">Краса.ua</span></div>
         </a>
         <button onclick="closeMobileMenu()">✕</button>
       </div>
