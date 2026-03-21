@@ -81,7 +81,7 @@ const ProductPage = {
     // Dynamic SEO meta tags
     const _desc = descText(p.description || `Купити ${p.name} з доставкою по Україні`).slice(0, 160);
     const _img = p.pictures && p.pictures[0] ? p.pictures[0] : '';
-    const _url = `https://techno-ua.store/product.html?id=${p.id}&cat=${catId}`;
+    const _url = `https://technoua.store/product.html?id=${p.id}&cat=${catId}`;
     const _sm = (id, attr, val) => { const el = document.getElementById(id); if (el && val) el.setAttribute(attr, val); };
     _sm('metaDesc', 'content', _desc);
     _sm('canonical', 'href', _url);

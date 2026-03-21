@@ -9,6 +9,7 @@ const CONFIG = {
     phone: '+380 50 000 00 00',
     telegram: '@techno_store_ua',
     workHours: 'Пн-Пт 9:00–18:00',
+    domain: 'https://technoua.store',
   },
   dataPath: './data',
   itemsPerPage: 24,
