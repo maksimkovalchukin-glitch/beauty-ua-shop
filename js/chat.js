@@ -159,6 +159,7 @@ const Chat = {
     const payload = {
       message,
       sessionId: this.sessionId,
+      shop: 'Техно.ua',
       page: window.location.pathname + window.location.search,
       timestamp: new Date().toISOString(),
     };
