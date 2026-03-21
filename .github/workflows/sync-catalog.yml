@@ -21,7 +21,7 @@ jobs:
 
       - name: Build catalog data
         env:
-          FEED_URL: https://api.dropshipping.ua/api/feeds/3537.xml
+          FEED_URL: https://api.dropshipping.ua/api/feeds/3539.xml
         run: python build.py
 
       - name: Commit & push data

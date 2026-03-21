@@ -4,9 +4,9 @@
 :root {
   --primary:       #0f1b2d;
   --primary-light: #1a2e4a;
-  --accent:        #2563EB;
-  --accent-hover:  #1d4ed8;
-  --accent-light:  #eff6ff;
+  --accent:        #db2777;
+  --accent-hover:  #be185d;
+  --accent-light:  #fdf2f8;
   --bg:            #f4f6f9;
   --card:          #ffffff;
   --text:          #1a202c;
@@ -87,7 +87,7 @@ ul { list-style: none; }
   background: var(--accent);
   color: #fff;
 }
-.btn--primary:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(37,99,235,.35); }
+.btn--primary:hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(219,39,119,.35); }
 .btn--secondary {
   background: transparent;
   color: var(--accent);
@@ -279,8 +279,8 @@ ul { list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(37,99,235,.15);
-  border: 1px solid rgba(37,99,235,.3);
+  background: rgba(219,39,119,.15);
+  border: 1px solid rgba(219,39,119,.3);
   color: #ffa07a;
   padding: 5px 14px;
   border-radius: 20px;
@@ -1049,7 +1049,7 @@ ul { list-style: none; }
   transition: border-color var(--transition);
 }
 .form-group input:focus,
-.form-group textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,.1); }
+.form-group textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(219,39,119,.1); }
 .form-group textarea { resize: vertical; min-height: 80px; }
 .form-group .hint { font-size: .78rem; color: var(--text-muted); margin-top: 4px; }
 
@@ -1080,7 +1080,7 @@ ul { list-style: none; }
   width: 58px; height: 58px;
   background: var(--accent);
   border-radius: 50%;
-  box-shadow: 0 4px 20px rgba(37,99,235,.5);
+  box-shadow: 0 4px 20px rgba(219,39,119,.5);
   display: flex; align-items: center; justify-content: center;
   color: #fff;
   font-size: 1.4rem;
@@ -1089,7 +1089,7 @@ ul { list-style: none; }
   transition: all var(--transition);
   border: none;
 }
-.chat-fab:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(37,99,235,.6); }
+.chat-fab:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(219,39,119,.6); }
 .chat-fab .badge {
   position: absolute;
   top: -4px; right: -4px;
@@ -1230,7 +1230,7 @@ ul { list-style: none; }
 .chat-quick-btn {
   background: var(--accent-light);
   color: var(--accent);
-  border: 1px solid rgba(37,99,235,.2);
+  border: 1px solid rgba(219,39,119,.2);
   padding: 5px 12px;
   border-radius: 20px;
   font-size: .78rem;
@@ -1288,7 +1288,7 @@ ul { list-style: none; }
 }
 .feature-item__icon {
   width: 44px; height: 44px;
-  background: rgba(37,99,235,.2);
+  background: rgba(219,39,119,.2);
   border-radius: var(--radius-sm);
   display: flex; align-items: center; justify-content: center;
   font-size: 1.2rem;
